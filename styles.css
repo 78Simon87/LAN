@@ -222,15 +222,16 @@ main div{
 }
 
 .contenedor-cards{
-    margin-top: -10%;
     display: flex;
     height: 200px;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    overflow-x: scroll;
+    overflow: auto;
     background: white;
     white-space: nowrap;
+    margin-bottom: 2%;
+    gap: 15px;
 }
 
 .contenedor-cards::-webkit-scrollbar{
@@ -247,16 +248,18 @@ main div{
 
 .cards{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 0 0 auto;
     flex-direction: column;
     position: relative;
-    width: 8.5rem;
-    height: 97%;
-    padding: 5px;
+    width: 10rem;
+    height: 190px;
+    padding: 6px;
     overflow: hidden;
     box-sizing: border-box;
     background-color: aliceblue;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 .cards:hover{
@@ -266,7 +269,7 @@ main div{
 }
 
 .cards img{
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover; /* La imagen cubrirá todo el contenedor, manteniendo su proporción */
@@ -282,15 +285,17 @@ main div{
 .botonrs-compra-cards{
     opacity: 0;
     display: flex;
-    gap: 5px;
+    gap: 3px;
     margin-top: 9rem;
     position: absolute;
     justify-content: center;
     align-items: center;
+    padding: 0%;
+    flex-wrap: wrap;
 }
 
 .btn-compra{
-    padding: 3px ;
+    padding: 2px ;
     color: #f9f8f8;
     background-color: #b9303c;
     text-align: center;
@@ -310,11 +315,51 @@ main div{
     background-color: #fcfafa;
     color: #b9303c;
     outline: #b9303c 2px solid;
-    padding: 3px;
+    padding: 1.5px;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .cards:hover .botonrs-compra-cards{
     opacity: 1;
+}
+
+.cards-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 0%;
+    height: 100vh;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+@media (max-width:600px){
+    .cards-wrap{
+        gap: 3.5px;
+        margin-bottom:10px;
+    }
+
+    .contenedor-cards{
+        height: 157px;
+    }
+
+    .cards{
+        width: 90px;
+        height: 150px;
+    }
+    #ocultar{
+        opacity: 0;
+        display: none;
+    }
+
+    .botonrs-compra-cards{
+        margin-top: 5rem;
+        gap: 4px;
+    }
+
 }
