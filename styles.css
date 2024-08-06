@@ -4,20 +4,20 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(255, 255, 255);
+}
+
 .head{
     position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
     width: 100%;
-    background-color: #feeee0;
+    background-color: #fce6d3;
     z-index: 1000;
-    transition: all .5s ease;
-}
-
-.head:hover{
-    transition: all .5s ease;
     box-shadow: 0 2px 15px rgba(21, 21, 21, 0.399);
+   
 }
 
 .title{
@@ -232,6 +232,7 @@ main div{
     white-space: nowrap;
     margin-bottom: 2%;
     gap: 15px;
+    background: none;
 }
 
 .contenedor-cards::-webkit-scrollbar{
@@ -258,7 +259,7 @@ main div{
     padding: 6px;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: aliceblue;
+    background-color: rgb(252, 252, 252);
     margin-left: 2px;
 }
 
@@ -330,7 +331,7 @@ main div{
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 0%;
+    padding: 2.5%;
     height: 100vh;
     z-index: 100;
     width: 100%;
@@ -349,7 +350,7 @@ main div{
     }
 
     .cards{
-        width: 120px;
+        width: 130px;
         height: 155px;
     }
 
