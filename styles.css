@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.head{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: #feeee0;
+    z-index: 1000;
+    transition: all .5s ease;
+}
+
+.head:hover{
+    transition: all .5s ease;
+    box-shadow: 0 2px 15px rgba(21, 21, 21, 0.399);
+}
+
+.title{
+    font-size: 35px;
+    margin-left: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #333;
+}
+
+.logo-site{
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-bottom: -30%;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: alias;
+    display: none;
+    border-bottom:1px solid #717171;
+}
+
+.logo-site .ion{
+    font-size: 30px;
+}
+
+.navegacion ul{
+    display: flex;
+    list-style: none;
+    color: #333;
+    font-size: 20px;
+    margin-top: 6px;
+    gap: 20px;
+}
+
+
+.navegacion ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navegacion ul li{
+    padding: 5px;
+    transition: all .6s ease;
+}
+
+.navegacion ul li:hover{
+    border-bottom:1px solid orange;
+    transition: all .6s ease;
+}
+
+.btn{
+    display: none;
+    font-size: 45px;
+    color: #333;
+    transition: all .6s ease-in-out;
+}
+
+.btn:hover{
+    color: #E63946;
+    transform: rotate(90deg);
+    transition: all .5s ease-in-out;
+}
+
+@media (max-width: 600px){
+    .btn{
+        display: block;
+    }
+
+    .logo-site{
+         display: flex;
+
+    }
+    .navegacion{
+        position: absolute;
+        overflow: hidden;
+        height: 100ch;
+        background-color: #fee4cd;  
+        width: 0;
+        margin: -4% -7%;
+        transition: all .9s ease;
+        box-shadow: 0 3px 15px rgba(20, 20, 20, 0.444);
+      }
+
+    .navegacion ul{
+        flex-direction: column;
+        padding-top: 150px;
+        transition: all .1s ease;
+    }
+    .navegacion ul li a:hover{
+        color: rgb(255, 185, 79);
+        
+    }
+
+    main div{
+        padding-bottom: 0%;
+    }
+
+    .navegacion ul li {
+        color: #333;
+        font-size: 30px;
+        margin: 0;
+        padding: 5%;
+        width: 100%;
+        transition: all .6s ease;
+    }
+    .navegacion ul li:hover{
+        color: rgb(250, 118, 3);
+        transition: all .6s ease;
+    }
+
+    .navegacion.barra{
+        color: #333;
+        width: 250px;
+        transition: all .9s ease;
+    }
+
+    .opacar{
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .opacar.desopacar{
+        transition: all 1s ease;
+        opacity: 1;
+    }
+
+
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 10%;
+    background-image: url(/imagenes-herramientas/fondo-imag.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content{
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 35rem;
+    height: 25rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: -10%;
+    background: none;
+    cursor: default;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 15%;
+    padding: 0%;
+}
+
+.buttons .btn-1{
+    color: #f9f8f8;
+    text-decoration: none;
+    text-align: center;
+    background-color: #E63946;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all .2s ease-in;
+}
+
+.buttons .btn-1:hover{
+    box-shadow: 0 3px 14px #0b0b0b88;
+    color: #E63946;
+    background-color: #f9f8f8;
+    outline: #E63946 2px  solid;
+    transition: all .2s ease-in;
+}
+
+.buttons .btn-2{
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 4px;
+    color: #E63946;
+    background-color: aliceblue;
+    outline: #E63946 2px solid ;
+}
+
+.buttons .btn-2:hover{
+    color: #b9303c;
+    outline: #c0303c 2px solid ;
+    box-shadow:0 2px 15px rgba(51, 51, 51, 0.463);
+}
+
+.contenedor-cards{
+    margin-top: -10%;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    background: white;
+    white-space: nowrap;
+}
+
+.contenedor-cards::-webkit-scrollbar{
+    height: 6px;
+}
+
+.contenedor-cards::-webkit-scrollbar-thumb{
+    background-color: rgb(162, 161, 161);
+}
+
+.contenedor-cards::-webkit-scrollbar-track {
+    background-color: #fcfafa; /* Color del área de la pista de desplazamiento */
+  }
+
+.cards{
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+    width: 8.5rem;
+    height: 97%;
+    padding: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    margin-left: 5px;
+}
+
+.cards:hover{
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(7, 7, 7, 0.378);
+    outline: .5px solid rgba(222, 222, 222, 0.764);
+}
+
+.cards img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen cubrirá todo el contenedor, manteniendo su proporción */
+    max-width: 100%;
+    transition: all .3s ease;
+}
+
+.cards img:hover{
+    transition: all .3s ease;
+    transform: scale(1.2);
+}
+
+.botonrs-compra-cards{
+    opacity: 0;
+    display: flex;
+    gap: 5px;
+    margin-top: 9rem;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-compra{
+    padding: 3px ;
+    color: #f9f8f8;
+    background-color: #b9303c;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; 
+    transition: all .2s ease;
+}
+
+.btn-compra:hover{
+    transition: all .2s ease;
+    color: #E63946;
+    background-color: #fcfafa;
+    outline: #E63946 2px solid;
+}
+
+.btn-detalles{
+    background-color: #fcfafa;
+    color: #b9303c;
+    outline: #b9303c 2px solid;
+    padding: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cards:hover .botonrs-compra-cards{
+    opacity: 1;
+}
