@@ -326,10 +326,10 @@ main div{
 
 .cards-wrap{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: 10px;
     padding: 0%;
     height: 100vh;
     z-index: 100;
@@ -340,7 +340,7 @@ main div{
 
 @media (max-width:600px){
     .cards-wrap{
-        gap: 3.5px;
+        gap: 9px;
         margin-bottom:10px;
     }
 
@@ -349,12 +349,8 @@ main div{
     }
 
     .cards{
-        width: 90px;
-        height: 150px;
-    }
-    #ocultar{
-        opacity: 0;
-        display: none;
+        width: 120px;
+        height: 155px;
     }
 
     .botonrs-compra-cards{
