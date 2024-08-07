@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    background-image: url(../imagenes-herramientas/fondo-registro.jpeg);
+}
+
+.head{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: #fce6d3;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(21, 21, 21, 0.399);
+   
+}
+
+.title{
+    font-size: 35px;
+    margin-left: 5px;
+    font-weight: 900;
+    cursor: default;
+    color: #333;
+}
+
+.logo-site{
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-bottom: -30%;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: alias;
+    display: none;
+    border-bottom:1px solid #717171;
+}
+
+.logo-site .ion{
+    font-size: 30px;
+}
+
+.navegacion ul{
+    display: flex;
+    list-style: none;
+    margin-top: 6px;
+    gap: 20px;
+}
+
+.navegacion ul li a ion-icon{
+    font-size: 25px;
+}
+
+.navegacion ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.navegacion ul li a:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+.btn{
+    display: none;
+    font-size: 45px;
+    color: #333;
+    transition: all .6s ease-in-out;
+}
+
+.btn:hover{
+    color: #E63946;
+    transform: rotate(90deg);
+    transition: all .5s ease-in-out;
+}
+
+@media (max-width: 600px){
+    .btn{
+        display: block;
+    }
+
+    .buttons .btn-1{
+        padding: 3px;
+    }
+
+    .logo-site{
+         display: flex;
+
+    }
+    .navegacion{
+        position: absolute;
+        overflow: hidden;
+        height: 100ch;
+        background-color: #fee4cd;  
+        width: 0;
+        margin: -4% -7%;
+        transition: all .9s ease;
+        box-shadow: 0 3px 15px rgba(20, 20, 20, 0.444);
+      }
+
+    .navegacion ul{
+        flex-direction: column;
+        padding-top: 150px;
+    }
+
+    .navegacion ul li a{
+        padding: 10px;
+    }
+    .navegacion ul li a:hover{
+        color: rgb(255, 185, 79);
+        border-bottom: 1px solid rgb(255, 185, 79);
+        
+    }
+
+    main div{
+        padding-bottom: 0%;
+    }
+
+    .navegacion ul li {
+        color: #333;
+        font-size: 30px;
+        margin: 0;
+        padding: 10px;
+        transition: all .3s ease;
+    }
+
+
+    .navegacion.barra{
+        color: #333;
+        width: 250px;
+        transition: all .9s ease;
+    }
+
+    .opacar{
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .opacar.desopacar{
+        transition: all 1s ease;
+        opacity: 1;
+    }
+
+
+}
+
+.contenedor-registro{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.registro-formulario{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 20rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px #1c1c1c34;
+    background-color: #fbe5d2;
+}
+
+.registro-formulario h2{
+    text-align: center;
+}
+
+.registro-formulario button{
+    width: 100%;
+    border-radius: 5px;
+    height: 1.9rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #E63946;
+    border: none;
+}
+
+.registro-formulario label{
+    justify-content: flex-start;
+    text-align: start;
+
+}
+
+.registro-formulario input{
+    border: none;
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    font-size: 15px;
+    background-color: #a8a8a817;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 8px;
+}
+
+.registro-formulario input:focus{
+    border-bottom: solid 1px rgb(0, 35, 176);
+    background-color: rgba(240, 248, 255, 0.715);
+}
+.input-check{
+    display: flex;
+    padding: 5px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.input-check input{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
