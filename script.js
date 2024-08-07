@@ -6,3 +6,4 @@ menu.addEventListener("click",()=>{
     desopacar.classList.toggle("desopacar");
     barraLateral.classList.toggle("barra");
 })
+
