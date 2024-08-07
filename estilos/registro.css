@@ -173,8 +173,8 @@ body{
     justify-content: center;
     align-items: center;
     padding: 15px;
-    width: 20rem;
-    height: 30rem;
+    width: 25rem;
+    height: 31rem;
     border-radius: 5px;
     box-shadow: 0 5px 15px #1c1c1c34;
     background-color: #fbe5d2;
@@ -194,7 +194,8 @@ body{
     color: white;
     background-color: #E63946;
     border: none;
-    margin-top: 20px;
+    margin-top: 10px;
+    position: relative;
 }
 
 .registro-formulario button:hover{
@@ -217,7 +218,7 @@ body{
     font-size: 17px;
     background-color: #a8a8a817;
     border-radius: 5px 5px 0 0;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .registro-formulario input:focus{
@@ -239,9 +240,9 @@ body{
 
 @media (max-width:600px){
     .registro-formulario{
-        padding: 10px;
-        width: 20rem;
-        height: 29rem;
+        padding: 25px;
+        width: 90%;
+        height: 100%rem;
         border-radius: 5px;
     }
 }
