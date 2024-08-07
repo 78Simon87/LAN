@@ -11,6 +11,10 @@ html{
 body{
     background-color: rgb(255, 255, 255);
     background-image: url(../imagenes-herramientas/fondo-registro.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .head{
