@@ -160,7 +160,7 @@ main div{
     align-items: center;
     padding-top: 150px;
     padding-bottom: 10%;
-    background-image: url(/imagenes-herramientas/fondo-imag.png);
+    background-image: url(imagenes-herramientas/fondo-imag.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -301,9 +301,9 @@ main div{
 }
 
 .btn-compra{
-    padding: 2px ;
+    padding: 1px ;
     color: #f9f8f8;
-    background-color: #b9303c;
+    background-color: #d22c3a;
     text-align: center;
     text-decoration: none;
     border-radius: 5px; 
@@ -312,18 +312,23 @@ main div{
 
 .btn-compra:hover{
     transition: all .2s ease;
-    color: #E63946;
-    background-color: #fcfafa;
-    outline: #E63946 2px solid;
+    color: #a4a2a2;
+    background-color: #931e28;
 }
 
 .btn-detalles{
     background-color: #fcfafa;
     color: #b9303c;
-    outline: #b9303c 2px solid;
-    padding: 1.5px;
+    outline: #b9303c 1px solid;
+    padding: 1px;
     border-radius: 5px;
     text-decoration: none;
+}
+
+.btn-detalles:hover{
+    background-color: #bababa;
+    color: #931e28;
+    outline: #931e28 1px solid;
 }
 
 .cards:hover .botonrs-compra-cards{
@@ -343,8 +348,9 @@ main div{
     }
 
     .botonrs-compra-cards{
-        margin-top: 5rem;
+        margin-top: 7rem;
         gap: 4px;
+        opacity: 1;
     }
 
 }
