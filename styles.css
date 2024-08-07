@@ -160,11 +160,31 @@ main div{
     align-items: center;
     padding-top: 150px;
     padding-bottom: 10%;
-    background-image: url(imagenes-herramientas/fondo-imag.png);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    animation: changeBackground 30s infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('fondo1.jpg');
+    }
+    33% {
+        background-image: url('fondo2.jpg');
+    }
+    66% {
+        background-image: url('fondo3.jpg');
+    }
+    80% {
+        background-image: url('fondo3.jpg');
+    }
+    100% {
+        background-image: url('fondo1.jpg');
+    }
 }
 
 .content{
@@ -228,11 +248,12 @@ main div{
 
 .contenedor-cards{
     display: flex;
-    height: 200px;
+    height: 210px;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
     overflow-x: scroll;
+    overflow-y: hidden;
     background: white;
     white-space: nowrap;
     margin-bottom: 2%;
@@ -261,7 +282,6 @@ main div{
     position: relative;
     width: 10rem;
     height: 190px;
-    padding: 5px;
     overflow: hidden;
     box-sizing: border-box;
     background-color: rgb(252, 252, 252);
@@ -289,34 +309,9 @@ main div{
 }
 
 .botonrs-compra-cards{
-    opacity: 0;
     display: flex;
-    margin-top: 9rem;
-    position: absolute;
     padding: 0%;
-    width: 80%;
-}
-
-.btn-compra{
-    padding: 3px ;
-    width: 100%;
-    color: #f9f8f8;
-    background-color: #d22c3a;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px; 
-    transition: all .2s ease;
-}
-
-.btn-compra:hover{
-    transition: all .2s ease;
-    color: #a4a2a2;
-    background-color: #931e28;
-}
-
-
-.cards:hover .botonrs-compra-cards{
-    opacity: 1;
+    width:100%;
 }
 
 @media (max-width:600px){
@@ -333,11 +328,6 @@ main div{
     .cards{
         width: 130px;
         height: 155px;
-    }
-
-    .botonrs-compra-cards{
-        margin-top: 7rem;
-        opacity: 1;
     }
 
 }
