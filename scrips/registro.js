@@ -7,3 +7,8 @@ menu.addEventListener("click",()=>{
     barraLateral.classList.toggle("barra");
 })
 
+const bottonAlert = document.getElementById("alert");
+// Define la función que se ejecutará cuando el botón sea clickeado
+bottonAlert.addEventListener("click", ()=>{
+    alert("Te has registrado con exito!");
+})
