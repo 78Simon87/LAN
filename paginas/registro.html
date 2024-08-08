@@ -33,10 +33,6 @@
                     </a>
                 </li>
                 <li >
-                    <a href=""><ion-icon name="mail-outline"></ion-icon>
-                        <samp> Productos</samp></a>
-                </li>
-                <li >
                     
                     <a href="about-us.html"><ion-icon name="business-outline"></ion-icon>
                        <samp> Nosotros</samp></a>
@@ -49,7 +45,7 @@
     </header>
 
     <div>
-        <form action="https://formspree.io/f/manwjyab" method="POST" class="contenedor-registro">
+        <form action="https://formsubmit.co/jhonatandavidcastrogalviz@gmail.com" method="POST" class="contenedor-registro">
             <div class="registro-formulario" >
                 <h2>Registro</h2>
                 <label for="Nombre" >Nombre completo.</label>
@@ -66,7 +62,10 @@
                     <label for="">Acepto los <a href="#">terminos y condiciones</a></label>
                     <input class="check" type="checkbox" required>
                 </div>
-                <button type="submit">enviar</button>
+                <button id="alert" type="submit">enviar</button>
+
+                <input type="hidden" name="_next" id="" value="">
+                <input type="hidden" name="_captchat" value="false">
             </div>
         </form>
     </div>
