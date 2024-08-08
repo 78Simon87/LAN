@@ -151,7 +151,24 @@ body{
         opacity: 1;
     }
 
+    .content{
+        padding: 16px;
+    }
 
+    #slideshow button{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+
+}
+
+.contenedor-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-top: 10%;
 }
 
 #slideshow {
@@ -174,36 +191,40 @@ body{
 
 #slideshow button{
     position: absolute;
-    top: 50%;
+    top: 65%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
 
 #prevBtn {
-    left: 10px;
+    left: 20px;
 }
 
 #nextBtn {
-    right: 10px;
+    right: 20px;
 }
 
 
 .content{
     color: rgb(0, 0, 0);
     overflow: hidden;
-    width: 35rem;
-    height: 25rem;
+    position: relative;
+    width: 80%;
+    height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 20px;
     border-radius: 5px;
-    margin-bottom: -10%;
+    margin-bottom: 5%;
     background: none;
     cursor: default;
 }
