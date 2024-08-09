@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/contacto.css">
+    <link rel="icon" href="../imagenes-herramientas/Diseño sin título.png" type="image/png">
     <title>Document</title>
 </head>
 <body>
@@ -43,16 +44,17 @@
         <form action="https://formsubmit.co/jhonatandavidcastrogalviz@gmail.com" method="POST" class="contenedor-registro">
             <div class="registro-formulario" >
                 <h2>Contacto</h2>
-                <label for="Nombre" >Nombre completo.</label>
-                <input id="Nombre" name="Nombre" type="text" required placeholder="Nombre">
-                <label for="E-mail">E-mail.</label>
-                <input id="E-mail" name="E-mail" type="email" required placeholder="Example@gmail.com">
-                <label for="">Confirme su correo.</label>
-                <input id="confirma-E-mail" name="confirma-E-mail" type="email" required placeholder="confirmar correo">
-                <label for="Contraseña">Contraseña</label>
-                <input id="Contraseña" name="Contraseña" type="password" required placeholder="Contraseña">
-                <label for="confirma-Contraseña">Confirme su Contraseña</label>
-                <input id="confirma-Contraseña" name="confirma-Contraseña" type="password" required placeholder="Confirme su Contraseña">
+                
+                <label for="nombre-usuario">Nombre completo</label>
+                <input type="text" name="Nombre-de-usuario" id="nombre-usuario" placeholder="Nombre" required>
+                <label for="email">Coreo</label>
+                <input type="email" name="Correo-usuario" id="email" placeholder="example@gmail.com" required>
+                <label for="numero-contacto">Numero de contacto</label>
+                <input type="number"  class="no-spinner" name="Numero-contacto-usuario" id="numero-contacto" required placeholder="+57 300 000 0000" >
+                <label for="asunto">Mensaje</label>
+                <textarea name="asunto-cliente" id="asunto" placeholder="Redacte su mensaje"></textarea>
+
+               
                 <div class="input-check">
                     <label for="">Acepto que me contacten, acepto los <a href="#">terminos y condiciones</a></label>
                     <input class="check" type="checkbox" required>
