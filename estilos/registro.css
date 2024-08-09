@@ -178,6 +178,7 @@ body{
     border-radius: 5px;
     box-shadow: 0 5px 15px #1c1c1c34;
     background-color: #fbe5d2;
+    text-align: start;
 }
 
 .registro-formulario h2{
@@ -203,12 +204,6 @@ body{
     background-color: #b41b27;
 }
 
-.registro-formulario label{
-    justify-content: flex-start;
-    text-align: start;
-    font-weight: 600;
-
-}
 
 .registro-formulario input{
     border: none;

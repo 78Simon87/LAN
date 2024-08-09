@@ -10,6 +10,9 @@ html{
 
 body{
     background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .head{
@@ -21,6 +24,7 @@ body{
     background-color: #fce6d3;
     z-index: 1000;
     box-shadow: 0 2px 15px rgba(21, 21, 21, 0.399);
+    top: 0%;
 }
 
 .title{
@@ -144,5 +148,88 @@ body{
     .opacar.desopacar{
         transition: all 1s ease;
         opacity: 1;
+    }
+}
+
+.contenedor-registro{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.registro-formulario{
+    padding: 15px;
+    width: 25rem;
+    height: 31rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px #1c1c1c34;
+    background-color: #fbe5d2;
+    text-align: start;
+}
+
+.registro-formulario h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registro-formulario button{
+    width: 100%;
+    border-radius: 5px;
+    height: 1.9rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #E63946;
+    border: none;
+    margin-top: 10px;
+    position: relative;
+}
+
+.registro-formulario button:hover{
+    color: rgb(195, 194, 194);
+    background-color: #b41b27;
+}
+
+.registro-formulario input{
+    border: none;
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    font-size: 17px;
+    background-color: #a8a8a817;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 15px;
+}
+
+.registro-formulario input::placeholder{
+    color: #717171;
+}
+
+.registro-formulario input:focus{
+    border-bottom: solid 1px rgb(0, 35, 176);
+    background-color: rgba(240, 248, 255, 0.715);
+}
+.input-check{
+    display: flex;
+    padding: 5px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.input-check input{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
+@media (max-width:600px){
+    .registro-formulario{
+        padding: 25px;
+        width: 90%;
+        height: 100%rem;
+        border-radius: 5px;
     }
 }
