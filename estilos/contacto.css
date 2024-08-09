@@ -19,7 +19,7 @@ body{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     width: 100%;
     background-color: #fce6d3;
     z-index: 1000;
@@ -162,6 +162,7 @@ body{
 
 .registro-formulario{
     padding: 15px;
+    display: block;
     width: 25rem;
     height: 31rem;
     border-radius: 5px;
@@ -202,6 +203,7 @@ body{
     background-color: #a8a8a817;
     border-radius: 5px 5px 0 0;
     margin-bottom: 15px;
+    padding: 10px;
 }
 
 .registro-formulario input::placeholder{
@@ -223,6 +225,38 @@ body{
     width: 15px;
     height: 15px;
     margin: 5px;
+}
+
+.registro-formulario textarea{
+    border: none;
+    outline: none;
+    background-color: #24242408;
+    width: 25rem;
+    height: 5rem;
+    padding: 10px;
+    border-radius: 6px;
+    max-width: 25rem; /* Ancho máximo */
+    max-height: 7rem;
+    resize: none;
+}
+
+.no-spinner::-webkit-inner-spin-button,
+        .no-spinner::-webkit-outer-spin-button {
+            -webkit-appearance: none; /* Oculta los controles de incremento/decremento */
+            margin: 0; /* Elimina el margen (opcional) */
+        }
+
+        /* Para Firefox */
+
+        /* Para Edge y algunos navegadores antiguos */
+        .no-spinner {
+            appearance: textfield; /* General para otros navegadores */
+        }
+
+
+.registro-formulario textarea:focus{
+    border-bottom: solid 1px rgb(0, 35, 176);
+    background-color: rgba(240, 248, 255, 0.715);
 }
 
 @media (max-width:600px){
