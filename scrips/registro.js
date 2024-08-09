@@ -10,5 +10,5 @@ menu.addEventListener("click",()=>{
 const bottonAlert = document.getElementById("alert");
 // Define la función que se ejecutará cuando el botón sea clickeado
 bottonAlert.addEventListener("click", ()=>{
-    alert("Te has registrado con exito!");
+    alert("Has click en aceptar para enviar el formulario");
 })
