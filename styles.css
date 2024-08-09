@@ -20,10 +20,10 @@ body{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     width: 100%;
     background-color: #fce6d3;
-    z-index: 1000;
+    z-index: 100000;
     box-shadow: 0 2px 15px rgba(21, 21, 21, 0.399);
     top: 0%;
 }
@@ -175,6 +175,7 @@ body{
     margin-top: 10%;
 }
 
+/* Estilos generales del slideshow */
 #slideshow {
     display: flex;
     justify-content: center;
@@ -276,6 +277,29 @@ body{
     outline: #c0303c 2px solid ;
 }
 
+.animation-text {
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto;
+    position: relative; /* Necesario para posicionar los h2 de forma absoluta */
+    height: 66%; /* Ajusta la altura según el tamaño del texto */
+    width: 90%; 
+    padding: 0%;/* Ajusta el ancho según el tamaño del texto */
+}
+
+.animation-text h2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    top:-5rem;
+    left: -0rem;
+    opacity: 0;
+    color: rgb(170, 127, 127);
+}
+
 .contenedor-cards{
     display: flex;
     height: 210px;
@@ -360,4 +384,121 @@ body{
         height: 155px;
     }
 
+    
+}
+
+
+.contenedor-descripcion{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.579);
+}
+
+.descripcion-producto {
+    background: linear-gradient(135deg, #f4f4f4 0%, #ffffff 100%); /* Gradiente de fondo */
+    padding: 20px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    max-width: 900px; /* Ancho máximo */
+    margin-top: 60px; /* Centrado y margen */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Alinear items al inicio */
+    gap: 20px; /* Espacio entre imagen y contenido */
+    position: relative; 
+    height: 80%;/* Necesario para el overlay */
+    width: 90%;
+    overflow-y: scroll;
+}
+
+.descripcion-producto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05); /* Overlay sutil */
+    border-radius: 15px; /* Bordes redondeados del overlay */
+    z-index: 0; /* Asegura que esté detrás del contenido */
+}
+
+.imagen-producto {
+    flex: 1; /* Ocupa el 50% del ancho del contenedor */
+    max-width: 300px; /* Ancho máximo de la imagen */
+    position: relative;
+}
+
+.imagen-producto img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Animación de transformación */
+}
+
+.imagen-producto img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.contenido-producto {
+    flex: 2; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    z-index: 1; /* Asegura que esté sobre el overlay */
+}
+
+.contenido-producto h1 {
+    font-size: 1.5em; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    font-family: 'Arial', sans-serif; /* Tipografía del título */
+}
+
+.contenido-producto p {
+    font-size: 1em; /* Tamaño del texto del párrafo */
+    color: #555; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 15px; /* Espacio debajo de los párrafos */
+    font-family: 'Verdana', sans-serif; /* Tipografía del párrafo */
+}
+
+.precio {
+    font-size: 1.5em; /* Tamaño del precio */
+    color: #e74c3c; /* Color llamativo para el precio */
+    font-weight: bold; /* Negrita para el precio */
+    margin-bottom: 20px; /* Espacio debajo del precio */
+    font-family: 'Arial', sans-serif; /* Tipografía del precio */
+}
+
+.boton-comprar {
+    background: linear-gradient(135deg, #3498db, #2980b9); /* Gradiente de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 10px 30px; /* Espaciado interno */
+    font-size: 1.2em; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background 0.3s, transform 0.2s; /* Efectos de transición */
+    position: relative; /* Necesario para el efecto de sombra */
+    z-index: 1; /* Asegura que esté sobre otros elementos */
+}
+
+
+.boton-comprar:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db); /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+.boton-comprar:active {
+    background: #1f618d; /* Color de fondo al hacer clic */
 }
