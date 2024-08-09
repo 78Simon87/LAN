@@ -1,148 +1,165 @@
-*{
+/* General Reset and Box Sizing */
+* {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: rgb(255, 255, 255);
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5; /* Light background for readability */
+    color: #333; /* Dark text color for contrast */
 }
 
-.head{
+/* Header Styles */
+.head {
     position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
     width: 100%;
-    background-color: #fce6d3;
+    background-color: #4a4a4a; /* Dark background for header */
+    color: #fff; /* White text for header */
     z-index: 1000;
-    box-shadow: 0 2px 15px rgba(21, 21, 21, 0.399);
+    top: 0%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
-.title{
-    font-size: 35px;
-    margin-left: 5px;
-    font-weight: 900;
-    cursor: default;
-    color: #333;
-}
-
-.logo-site{
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-bottom: -30%;
-    font-size: 30px;
+.title {
+    font-size: 36px;
     font-weight: 700;
-    cursor: alias;
-    display: none;
-    border-bottom:1px solid #717171;
+    cursor: default;
 }
 
-.logo-site .ion{
+.logo-site {
+    margin-top: 80px;
+    font-size: 28px;
+    font-weight: 700;
+    display: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-site .ion {
     font-size: 30px;
 }
 
-.navegacion ul{
+.navegacion ul {
     display: flex;
     list-style: none;
-    margin-top: 6px;
+    margin-top: 10px;
     gap: 20px;
 }
 
-.navegacion ul li a ion-icon{
-    font-size: 25px;
+.navegacion ul li a ion-icon {
+    font-size: 24px;
 }
 
-.navegacion ul li a{
+.navegacion ul li a {
     text-decoration: none;
-    color: #333;
-    font-size: 20px;
-    font-weight: 700;
+    color: #fff; /* White text for links */
+    font-size: 18px;
+    font-weight: 500;
     padding: 10px;
 }
 
-.navegacion ul li a:hover{
-    color: orange;
-    border-bottom: 1px solid orange;
+.navegacion ul li a:hover {
+    color: #f39c12; /* Highlight color on hover */
+    border-bottom: 2px solid #f39c12;
 }
 
-.btn{
+.btn {
     display: none;
-    font-size: 45px;
-    color: #333;
+    font-size: 40px;
+    color: #fff;
     transition: all .6s ease-in-out;
 }
 
-.btn:hover{
-    color: #E63946;
+.btn:hover {
+    color: #f39c12;
     transform: rotate(90deg);
     transition: all .5s ease-in-out;
 }
 
-@media (max-width: 600px){
-    .btn{
+/* Main Content Styles */
+.main-content {
+    margin-top: 80px; /* Adjusted for fixed header */
+    padding: 20px;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff; /* White background for content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555; /* Slightly lighter text color */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .btn {
         display: block;
     }
 
-    .logo-site{
-         display: flex;
-
+    .logo-site {
+        display: flex;
     }
-    .navegacion{
+
+    .navegacion {
         position: absolute;
         overflow: hidden;
-        height: 100ch;
-        background-color: #fee4cd;  
+        height: 100vh;
+        background-color: #4a4a4a;  
         width: 0;
         margin: -4% -7%;
         transition: all .9s ease;
-        box-shadow: 0 3px 15px rgba(20, 20, 20, 0.444);
-      }
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    }
 
-    .navegacion ul{
+    .navegacion ul {
         flex-direction: column;
         padding-top: 150px;
     }
 
-    .navegacion ul li a{
-        padding: 10px;
-    }
-    .navegacion ul li a:hover{
-        color: rgb(255, 185, 79);
-        border-bottom: 1px solid rgb(255, 185, 79);
-        
+    .navegacion ul li a {
+        padding: 15px;
     }
 
-    main div{
-        padding-bottom: 0%;
+    .navegacion ul li a:hover {
+        color: #f39c12;
+        border-bottom: 2px solid #f39c12;
     }
 
-    .navegacion ul li {
-        color: #333;
-        font-size: 30px;
-        margin: 0;
-        padding: 10px;
-        transition: all .3s ease;
-    }
-
-
-    .navegacion.barra{
-        color: #333;
+    .navegacion.barra {
         width: 250px;
         transition: all .9s ease;
     }
 
-    .opacar{
+    .opacar {
         opacity: 0;
         transition: all 1s ease;
     }
 
-    .opacar.desopacar{
-        transition: all 1s ease;
+    .opacar.desopacar {
         opacity: 1;
+        transition: all 1s ease;
     }
 }

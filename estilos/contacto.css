@@ -151,7 +151,7 @@ body{
     }
 }
 
-.contenedor-registro{
+.contenedor-registro {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -160,26 +160,27 @@ body{
     margin: 0;
 }
 
-.registro-formulario{
+.registro-formulario {
     padding: 15px;
     display: block;
     width: 25rem;
-    height: 31rem;
+    height: auto; /* Ajustar altura automáticamente */
+    max-width: 90%; /* Evitar desbordamiento en pantallas pequeñas */
     border-radius: 5px;
     box-shadow: 0 5px 15px #1c1c1c34;
     background-color: #fbe5d2;
     text-align: start;
 }
 
-.registro-formulario h2{
+.registro-formulario h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.registro-formulario button{
+.registro-formulario button {
     width: 100%;
     border-radius: 5px;
-    height: 1.9rem;
+    height: 2.5rem; /* Aumentar altura para mejorar accesibilidad */
     font-size: 18px;
     font-weight: 600;
     color: white;
@@ -189,15 +190,15 @@ body{
     position: relative;
 }
 
-.registro-formulario button:hover{
+.registro-formulario button:hover {
     color: rgb(195, 194, 194);
     background-color: #b41b27;
 }
 
-.registro-formulario input{
+.registro-formulario input {
     border: none;
     width: 100%;
-    height: 2rem;
+    height: 2.5rem; /* Aumentar altura para mejorar accesibilidad */
     outline: none;
     font-size: 17px;
     background-color: #a8a8a817;
@@ -206,64 +207,68 @@ body{
     padding: 10px;
 }
 
-.registro-formulario input::placeholder{
+.registro-formulario input::placeholder {
     color: #717171;
 }
 
-.registro-formulario input:focus{
+.registro-formulario input:focus {
     border-bottom: solid 1px rgb(0, 35, 176);
     background-color: rgba(240, 248, 255, 0.715);
 }
-.input-check{
+
+.input-check {
     display: flex;
     padding: 5px;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-.input-check input{
+.input-check input {
     width: 15px;
     height: 15px;
     margin: 5px;
 }
 
-.registro-formulario textarea{
+.registro-formulario textarea {
     border: none;
     outline: none;
     background-color: #24242408;
-    width: 20rem;
-    height: 5rem;
+    width: 100%; /* Ajustar ancho al 100% del contenedor */
+    height: auto; /* Ajustar altura automáticamente */
     padding: 10px;
     border-radius: 6px;
-    max-width: 25rem; /* Ancho máximo */
-    max-height: 7rem;
-    resize: none;
+    resize: none; /* Deshabilitar el redimensionamiento */
 }
 
 .no-spinner::-webkit-inner-spin-button,
-        .no-spinner::-webkit-outer-spin-button {
-            -webkit-appearance: none; /* Oculta los controles de incremento/decremento */
-            margin: 0; /* Elimina el margen (opcional) */
-        }
+.no-spinner::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Ocultar controles de incremento/decremento */
+    margin: 0;
+}
 
-        /* Para Firefox */
+.no-spinner {
+    appearance: textfield; /* General para otros navegadores */
+}
 
-        /* Para Edge y algunos navegadores antiguos */
-        .no-spinner {
-            appearance: textfield; /* General para otros navegadores */
-        }
-
-
-.registro-formulario textarea:focus{
+.registro-formulario textarea:focus {
     border-bottom: solid 1px rgb(0, 35, 176);
     background-color: rgba(240, 248, 255, 0.715);
 }
 
-@media (max-width:600px){
-    .registro-formulario{
-        padding: 25px;
+@media (max-width: 600px) {
+    .registro-formulario {
+        padding: 20px;
         width: 90%;
-        height: 100%rem;
+        height: auto; /* Ajustar altura automáticamente */
         border-radius: 5px;
+    }
+
+    .registro-formulario input,
+    .registro-formulario textarea {
+        font-size: 16px; /* Ajustar tamaño de fuente para mejorar la legibilidad */
+    }
+
+    .registro-formulario button {
+        height: 2.5rem; /* Aumentar altura del botón para mejorar la usabilidad */
     }
 }

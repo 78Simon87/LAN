@@ -159,37 +159,38 @@ body{
 
 }
 
-.contenedor-registro{
+.contenedor-registro {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
 }
 
-.registro-formulario{
+.registro-formulario {
     display: block;
     justify-content: center;
     align-items: center;
     padding: 15px;
     width: 25rem;
-    height: 31rem;
+    height: auto; /* Ajustar altura automática */
+    max-width: 100%;
     border-radius: 5px;
     box-shadow: 0 5px 15px #1c1c1c34;
     background-color: #fbe5d2;
     text-align: start;
+    margin-top: 8rem;
 }
 
-.registro-formulario h2{
+.registro-formulario h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.registro-formulario button{
+.registro-formulario button {
     width: 100%;
     border-radius: 5px;
-    height: 1.9rem;
+    height: 2.5rem; /* Aumentar altura para mejor accesibilidad */
     font-size: 18px;
     font-weight: 600;
     color: white;
@@ -199,45 +200,57 @@ body{
     position: relative;
 }
 
-.registro-formulario button:hover{
+.registro-formulario button:hover {
     color: rgb(195, 194, 194);
     background-color: #b41b27;
 }
 
-
-.registro-formulario input{
+.registro-formulario input {
     border: none;
     width: 100%;
-    height: 2rem;
+    height: 2.5rem; /* Aumentar altura para mejor accesibilidad */
     outline: none;
     font-size: 17px;
     background-color: #a8a8a817;
     border-radius: 5px 5px 0 0;
     margin-bottom: 15px;
+    padding: 0 10px; /* Añadir padding para mejor usabilidad */
 }
 
-.registro-formulario input:focus{
+.registro-formulario input:focus {
     border-bottom: solid 1px rgb(0, 35, 176);
     background-color: rgba(240, 248, 255, 0.715);
 }
-.input-check{
+
+.input-check {
     display: flex;
     padding: 5px;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-.input-check input{
+.input-check input {
     width: 15px;
     height: 15px;
     margin: 5px;
 }
 
-@media (max-width:600px){
-    .registro-formulario{
-        padding: 25px;
+@media (max-width: 600px) {
+    .registro-formulario {
+        padding: 20px;
         width: 90%;
-        height: 100%rem;
+        max-width: 100%;
+        height: auto;
         border-radius: 5px;
+    }
+
+    .registro-formulario input {
+        height: 2.5rem;
+        font-size: 16px;
+    }
+
+    .registro-formulario button {
+        height: 2.5rem;
+        font-size: 16px;
     }
 }
