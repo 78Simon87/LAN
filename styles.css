@@ -368,7 +368,7 @@ body{
     width:100%;
 }
 
-@media (max-width:600px){
+@media (max-width:680px){
 
     .contenedor-cards{
         height: 160px;
@@ -382,6 +382,14 @@ body{
     .cards{
         width: 130px;
         height: 155px;
+    }
+
+    .anuncio{
+        display: flex;
+        width: 90%;
+        height: 200px;
+        align-items: center;
+        overflow: auto;
     }
 
     
@@ -505,9 +513,9 @@ body{
 
 
 .anuncio{
-    display: flex;
+    display: none;
     width: 90%;
-    height: 190px;
+    height: 200px;
     align-items: center;
     overflow: auto;
 }
