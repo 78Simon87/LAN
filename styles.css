@@ -502,3 +502,12 @@ body{
 .boton-comprar:active {
     background: #1f618d; /* Color de fondo al hacer clic */
 }
+
+
+.anuncio{
+    display: flex;
+    width: 90%;
+    height: 190px;
+    align-items: center;
+    overflow: auto;
+}
