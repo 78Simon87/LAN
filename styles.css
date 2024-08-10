@@ -513,7 +513,9 @@ body{
 
 
 .anuncio{
-    display: none;
+    display: flex;
+    position: relative;
+    opacity: 0;
     width: 90%;
     height: 200px;
     align-items: center;
