@@ -384,15 +384,6 @@ body{
         height: 155px;
     }
 
-    .anuncio{
-        display: flex;
-        width: 90%;
-        opacity: 1;
-        height: 200px;
-        align-items: center;
-        overflow: auto;
-    }
-
     
 }
 
@@ -516,7 +507,7 @@ body{
 .anuncio{
     display: flex;
     position: relative;
-    opacity: 0;
+    opacity: 1;
     width: 90%;
     height: 200px;
     align-items: center;
